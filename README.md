@@ -1,1 +1,1 @@
-# To-do-list
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>To-Do List</title><style>body{font-family:sans-serif;}#list{list-style:none;}</style></head><body><input id="taskInput" placeholder="Add a task"><button onclick="addTask()">Add</button><ul id="list"></ul><script>function addTask(){const input=document.getElementById('taskInput');if(input.value){const li=document.createElement('li');li.textContent=input.value;li.onclick=()=>li.remove();document.getElementById('list').appendChild(li);input.value='';}}</script></body></html>
